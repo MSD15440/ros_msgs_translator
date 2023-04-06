@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'f64tomulti'
+package_name = 'ros_msgs_translator'
 
 setup(
     name=package_name,
@@ -15,7 +15,7 @@ setup(
     zip_safe=True,
     maintainer='atticus',
     maintainer_email='atticusrussell@gmail.com',
-    description='Converts Float64 to 1d Float64Multi',
+    description='Converts ros messages, like Float64 to 1d Float64Multi',
     license='MIT',
     tests_require=['pytest'],
     entry_points={

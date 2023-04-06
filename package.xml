@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>f64tomulti</name>
+  <name>ros_msgs_translator</name>
   <version>0.0.0</version>
-  <description>Converts Float64 to 1d Float64Multi</description>
+  <description>Converts ros messages, like Float64 to 1d Float64Multi</description>
   <maintainer email="atticusrussell@gmail.com">atticus</maintainer>
   <license>MIT</license>
 
