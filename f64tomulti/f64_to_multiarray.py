@@ -21,15 +21,16 @@ class F64ToMultiArray(Node):
         )
 
     def f64_callback(self, msg):
+        #  dim should be empty
         # Create the MultiArrayDimension object
-        dim = MultiArrayDimension()
-        dim.label = 'f64_data'
-        dim.size = 1
-        dim.stride = 1
+        # dim = MultiArrayDimension()
+        # dim.label = 'f64_data'
+        # dim.size = 1
+        # dim.stride = 1
 
         # Create the MultiArrayLayout object
         layout = MultiArrayLayout()
-        layout.dim = [dim]
+        layout.dim = []
         layout.data_offset = 0
 
         # Create and populate the Float64MultiArray message
