@@ -2,10 +2,10 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64, Float64MultiArray, MultiArrayDimension, MultiArrayLayout
 
-class F64ToMultiArray(Node):
+class RosMsgsTranslator(Node):
 
     def __init__(self):
-        super().__init__('f64_to_multiarray')
+        super().__init__('ros_msgs_translator')
 
         self.subscriber = self.create_subscription(
             Float64,
@@ -21,12 +21,6 @@ class F64ToMultiArray(Node):
         )
 
     def f64_callback(self, msg):
-        #  dim should be empty
-        # Create the MultiArrayDimension object
-        # dim = MultiArrayDimension()
-        # dim.label = 'f64_data'
-        # dim.size = 1
-        # dim.stride = 1
 
         # Create the MultiArrayLayout object
         layout = MultiArrayLayout()
@@ -44,7 +38,7 @@ class F64ToMultiArray(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    node = F64ToMultiArray()
+    node = RosMsgsTranslator()
 
     try:
         rclpy.spin(node)
