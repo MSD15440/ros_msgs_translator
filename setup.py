@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'f64_to_multiarray = f64tomulti.f64_to_multiarray:main',
+            'ros_msgs_translator = ros_msgs_translator.ros_msgs_translator:main',
         ],
     },
 )
